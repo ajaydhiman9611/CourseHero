@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://cdn.ckeditor.com/ckeditor5/23.0.0/classic/ckeditor.js"></script>
+
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}</style><script async="" src="./Tutor Dashboard - Course Hero_files/js-sha256-v1.min.js.download" integrity="sha384-W4RqaNUbvBdTRc41QQAWDcd2aX9wGruak2WnlXwyjVAlhi56zatCk4e/RSqwrAg6" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="./Tutor Dashboard - Course Hero_files/saved_resource"></script><script async="" src="./Tutor Dashboard - Course Hero_files/insight.old.min.js.download"></script><script type="text/javascript" async="" src="./Tutor Dashboard - Course Hero_files/bat.js.download"></script>
+        <script async="" src="./Tutor Dashboard - Course Hero_files/scevent.min.js.download"></script><script async="" src="./Tutor Dashboard - Course Hero_files/obtp.js.download" type="text/javascript"></script><script type="text/javascript" async="" src="./Tutor Dashboard - Course Hero_files/amplitude-7.1.0-min.gz.js.download"></script><script type="text/javascript" async="" src="./Tutor Dashboard - Course Hero_files/saved_resource(1)"></script><script type="text/javascript" async="" src="./Tutor Dashboard - Course Hero_files/insight.min.js.download"></script><script type="text/javascript" async="" src="./Tutor Dashboard - Course Hero_files/uwt.js.download"></script><script type="text/javascript" async="" src="./Tutor Dashboard - Course Hero_files/f.txt"></script><script async="" src="./Tutor Dashboard - Course Hero_files/gtm.js.download"></script><script src="./Tutor Dashboard - Course Hero_files/a29ef3ef5633bae66493cfa47c5b2f8f" async=""></script>
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            textarea:focus {
+                outline: none !important;
+                border:none !important;
+            }
+          
+            #textArea:focus {
+                outline: none !important;
+                border:none !important;
+            }
+
+            input[type="file"] {
+                display: none;
+            }
+            .custom-file-upload {
+                border: 1px solid #ccc;
+                display: inline-block;
+                padding: 6px 12px;
+                cursor: pointer;
+            }
+            /* modal-css */
+            .modal {
+                display: none; /* Hidden by default */
+                position: fixed; /* Stay in place */
+                z-index: 1; /* Sit on top */
+                left: 0;
+                top: 0;
+                width: 100%; /* Full width */
+                height: 100%; /* Full height */
+                overflow: auto; /* Enable scroll if needed */
+                background-color: rgb(0,0,0); /* Fallback color */
+                background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+                }
+
+                /* Modal Content/Box */
+                .modal-content {
+                background-color: #fefefe;
+                margin: 7% auto; /* centered */
+                padding: 20px;
+                border: 1px solid #888;
+                width: 45% !important; /* Could be more or less, depending on screen size */
+                }
+                .modal-content-Submit{
+                    background-color: #fefefe;
+                margin: 10% auto; /* centered */
+                padding: 20px;
+                border: 1px solid #888;
+                width: 40% !important; /* Could be more or less, depending on screen size */
+                }
+                /* The Close Button */
+                .close {
+                color: #aaa;
+                float: right;
+                font-size: 28px;
+                font-weight: bold;
+                }
+
+                .close:hover,
+                .close:focus {
+                color: black;
+                text-decoration: none;
+                cursor: pointer;
+                }
+        </style>
+        <script src="js/startTutoring.js" />
+        <script src="js/imagePreview.js" />
+        <link src="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+        
+            <meta http-equiv="X-UA-Compatible" content="IE=edge"><script type="text/javascript">(window.NREUM||(NREUM={})).init={privacy:{cookies_enabled:true}};(window.NREUM||(NREUM={})).loader_config={xpid:"Ug8CUVVbGwIDUlVUBgkGVg==",licenseKey:"404bf9505f",applicationID:"136461810"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(t){try{c.console&&console.log(t)}catch(e){}}var o,i=t("ee"),a=t(27),c={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(c.console=!0,o.indexOf("dev")!==-1&&(c.dev=!0),o.indexOf("nr_dev")!==-1&&(c.nrDev=!0))}catch(s){}c.nrDev&&i.on("internal-error",function(t){r(t.stack)}),c.dev&&i.on("fn-err",function(t,e,n){r(n.stack)}),c.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(c,function(t,e){return t}).join(", ")))},{}],2:[function(t,e,n){function r(t,e,n,r,c){try{l?l-=1:o(c||new UncaughtException(t,e,n),!0)}catch(f){try{i("ierr",[f,s.now(),!0])}catch(d){}}return"function"==typeof u&&u.apply(this,a(arguments))}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function o(t,e){var n=e?null:s.now();i("err",[t,n])}var i=t("handle"),a=t(28),c=t("ee"),s=t("loader"),f=t("gos"),u=window.onerror,d=!1,p="nr@seenError",l=0;s.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(h){"stack"in h&&(t(13),t(12),"addEventListener"in window&&t(6),s.xhrWrappable&&t(14),d=!0)}c.on("fn-start",function(t,e,n){d&&(l+=1)}),c.on("fn-err",function(t,e,n){d&&!n[p]&&(f(n,p,function(){return!0}),this.thrown=!0,o(n))}),c.on("fn-end",function(){d&&!this.thrown&&l>0&&(l-=1)}),c.on("internal-error",function(t){i("ierr",[t,s.now(),!0])})},{}],3:[function(t,e,n){t("loader").features.ins=!0},{}],4:[function(t,e,n){function r(){_++,T=g.hash,this[u]=y.now()}function o(){_--,g.hash!==T&&i(0,!0);var t=y.now();this[h]=~~this[h]+t-this[u],this[d]=t}function i(t,e){E.emit("newURL",[""+g,e])}function a(t,e){t.on(e,function(){this[e]=y.now()})}var c="-start",s="-end",f="-body",u="fn"+c,d="fn"+s,p="cb"+c,l="cb"+s,h="jsTime",m="fetch",v="addEventListener",w=window,g=w.location,y=t("loader");if(w[v]&&y.xhrWrappable){var x=t(10),b=t(11),E=t(8),R=t(6),O=t(13),N=t(7),M=t(14),P=t(9),S=t("ee"),C=S.get("tracer");t(16),y.features.spa=!0;var T,_=0;S.on(u,r),S.on(p,r),S.on(d,o),S.on(l,o),S.buffer([u,d,"xhr-done","xhr-resolved"]),R.buffer([u]),O.buffer(["setTimeout"+s,"clearTimeout"+c,u]),M.buffer([u,"new-xhr","send-xhr"+c]),N.buffer([m+c,m+"-done",m+f+c,m+f+s]),E.buffer(["newURL"]),x.buffer([u]),b.buffer(["propagate",p,l,"executor-err","resolve"+c]),C.buffer([u,"no-"+u]),P.buffer(["new-jsonp","cb-start","jsonp-error","jsonp-end"]),a(M,"send-xhr"+c),a(S,"xhr-resolved"),a(S,"xhr-done"),a(N,m+c),a(N,m+"-done"),a(P,"new-jsonp"),a(P,"jsonp-end"),a(P,"cb-start"),E.on("pushState-end",i),E.on("replaceState-end",i),w[v]("hashchange",i,!0),w[v]("load",i,!0),w[v]("popstate",function(){i(0,_>1)},!0)}},{}],5:[function(t,e,n){function r(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var o=t("ee"),i=t("handle"),a=t(13),c=t(12),s="learResourceTimings",f="addEventListener",u="resourcetimingbufferfull",d="bstResource",p="resource",l="-start",h="-end",m="fn"+l,v="fn"+h,w="bstTimer",g="pushState",y=t("loader");y.features.stn=!0,t(8),"addEventListener"in window&&t(6);var x=NREUM.o.EV;o.on(m,function(t,e){var n=t[0];n instanceof x&&(this.bstStart=y.now())}),o.on(v,function(t,e){var n=t[0];n instanceof x&&i("bst",[n,e,this.bstStart,y.now()])}),a.on(m,function(t,e,n){this.bstStart=y.now(),this.bstType=n}),a.on(v,function(t,e){i(w,[e,this.bstStart,y.now(),this.bstType])}),c.on(m,function(){this.bstStart=y.now()}),c.on(v,function(t,e){i(w,[e,this.bstStart,y.now(),"requestAnimationFrame"])}),o.on(g+l,function(t){this.time=y.now(),this.startPath=location.pathname+location.hash}),o.on(g+h,function(t){i("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),f in window.performance&&(window.performance["c"+s]?window.performance[f](u,function(t){i(d,[window.performance.getEntriesByType(p)]),window.performance["c"+s]()},!1):window.performance[f]("webkit"+u,function(t){i(d,[window.performance.getEntriesByType(p)]),window.performance["webkitC"+s]()},!1)),document[f]("scroll",r,{passive:!0}),document[f]("keypress",r,!1),document[f]("click",r,!1)}},{}],6:[function(t,e,n){function r(t){for(var e=t;e&&!e.hasOwnProperty(u);)e=Object.getPrototypeOf(e);e&&o(e)}function o(t){c.inPlace(t,[u,d],"-",i)}function i(t,e){return t[1]}var a=t("ee").get("events"),c=t("wrap-function")(a,!0),s=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";e.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,e){var n=t[1],r=s(n,"nr@wrapped",function(){function t(){if("function"==typeof n.handleEvent)return n.handleEvent.apply(n,arguments)}var e={object:t,"function":n}[typeof n];return e?c(e,"fn-",null,e.name||"anonymous"):n});this.wrapped=t[1]=r}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],7:[function(t,e,n){function r(t,e,n){var r=t[e];"function"==typeof r&&(t[e]=function(){var t=i(arguments),e={};o.emit(n+"before-start",[t],e);var a;e[m]&&e[m].dt&&(a=e[m].dt);var c=r.apply(this,t);return o.emit(n+"start",[t,a],c),c.then(function(t){return o.emit(n+"end",[null,t],c),t},function(t){throw o.emit(n+"end",[t],c),t})})}var o=t("ee").get("fetch"),i=t(28),a=t(27);e.exports=o;var c=window,s="fetch-",f=s+"body-",u=["arrayBuffer","blob","json","text","formData"],d=c.Request,p=c.Response,l=c.fetch,h="prototype",m="nr@context";d&&p&&l&&(a(u,function(t,e){r(d[h],e,f),r(p[h],e,f)}),r(c,"fetch",s),o.on(s+"end",function(t,e){var n=this;if(e){var r=e.headers.get("content-length");null!==r&&(n.rxSize=r),o.emit(s+"done",[null,e],n)}else o.emit(s+"done",[t],n)}))},{}],8:[function(t,e,n){var r=t("ee").get("history"),o=t("wrap-function")(r);e.exports=r;var i=window.history&&window.history.constructor&&window.history.constructor.prototype,a=window.history;i&&i.pushState&&i.replaceState&&(a=i),o.inPlace(a,["pushState","replaceState"],"-")},{}],9:[function(t,e,n){function r(t){function e(){s.emit("jsonp-end",[],p),t.removeEventListener("load",e,!1),t.removeEventListener("error",n,!1)}function n(){s.emit("jsonp-error",[],p),s.emit("jsonp-end",[],p),t.removeEventListener("load",e,!1),t.removeEventListener("error",n,!1)}var r=t&&"string"==typeof t.nodeName&&"script"===t.nodeName.toLowerCase();if(r){var o="function"==typeof t.addEventListener;if(o){var a=i(t.src);if(a){var u=c(a),d="function"==typeof u.parent[u.key];if(d){var p={};f.inPlace(u.parent,[u.key],"cb-",p),t.addEventListener("load",e,!1),t.addEventListener("error",n,!1),s.emit("new-jsonp",[t.src],p)}}}}}function o(){return"addEventListener"in window}function i(t){var e=t.match(u);return e?e[1]:null}function a(t,e){var n=t.match(p),r=n[1],o=n[3];return o?a(o,e[r]):e[r]}function c(t){var e=t.match(d);return e&&e.length>=3?{key:e[2],parent:a(e[1],window)}:{key:t,parent:window}}var s=t("ee").get("jsonp"),f=t("wrap-function")(s);if(e.exports=s,o()){var u=/[?&](?:callback|cb)=([^&#]+)/,d=/(.*)\.([^.]+)/,p=/^(\w+)(\.|$)(.*)$/,l=["appendChild","insertBefore","replaceChild"];Node&&Node.prototype&&Node.prototype.appendChild?f.inPlace(Node.prototype,l,"dom-"):(f.inPlace(HTMLElement.prototype,l,"dom-"),f.inPlace(HTMLHeadElement.prototype,l,"dom-"),f.inPlace(HTMLBodyElement.prototype,l,"dom-")),s.on("dom-start",function(t){r(t[0])})}},{}],10:[function(t,e,n){var r=t("ee").get("mutation"),o=t("wrap-function")(r),i=NREUM.o.MO;e.exports=r,i&&(window.MutationObserver=function(t){return this instanceof i?new i(o(t,"fn-")):i.apply(this,arguments)},MutationObserver.prototype=i.prototype)},{}],11:[function(t,e,n){function r(t){var e=a.context(),n=c(t,"executor-",e),r=new f(n);return a.context(r).getCtx=function(){return e},a.emit("new-promise",[r,e],e),r}function o(t,e){return e}var i=t("wrap-function"),a=t("ee").get("promise"),c=i(a),s=t(27),f=NREUM.o.PR;e.exports=a,f&&(window.Promise=r,["all","race"].forEach(function(t){var e=f[t];f[t]=function(n){function r(t){return function(){a.emit("propagate",[null,!o],i),o=o||!t}}var o=!1;s(n,function(e,n){Promise.resolve(n).then(r("all"===t),r(!1))});var i=e.apply(f,arguments),c=f.resolve(i);return c}}),["resolve","reject"].forEach(function(t){var e=f[t];f[t]=function(t){var n=e.apply(f,arguments);return t!==n&&a.emit("propagate",[t,!0],n),n}}),f.prototype["catch"]=function(t){return this.then(null,t)},f.prototype=Object.create(f.prototype,{constructor:{value:r}}),s(Object.getOwnPropertyNames(f),function(t,e){try{r[e]=f[e]}catch(n){}}),a.on("executor-start",function(t){t[0]=c(t[0],"resolve-",this),t[1]=c(t[1],"resolve-",this)}),a.on("executor-err",function(t,e,n){t[1](n)}),c.inPlace(f.prototype,["then"],"then-",o),a.on("then-start",function(t,e){this.promise=e,t[0]=c(t[0],"cb-",this),t[1]=c(t[1],"cb-",this)}),a.on("then-end",function(t,e,n){this.nextPromise=n;var r=this.promise;a.emit("propagate",[r,!0],n)}),a.on("cb-end",function(t,e,n){a.emit("propagate",[n,!0],this.nextPromise)}),a.on("propagate",function(t,e,n){this.getCtx&&!e||(this.getCtx=function(){if(t instanceof Promise)var e=a.context(t);return e&&e.getCtx?e.getCtx():this})}),r.toString=function(){return""+f})},{}],12:[function(t,e,n){var r=t("ee").get("raf"),o=t("wrap-function")(r),i="equestAnimationFrame";e.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],13:[function(t,e,n){function r(t,e,n){t[0]=a(t[0],"fn-",null,n)}function o(t,e,n){this.method=n,this.timerDuration=isNaN(t[1])?0:+t[1],t[0]=a(t[0],"fn-",this,n)}var i=t("ee").get("timer"),a=t("wrap-function")(i),c="setTimeout",s="setInterval",f="clearTimeout",u="-start",d="-";e.exports=i,a.inPlace(window,[c,"setImmediate"],c+d),a.inPlace(window,[s],s+d),a.inPlace(window,[f,"clearImmediate"],f+d),i.on(s+u,r),i.on(c+u,o)},{}],14:[function(t,e,n){function r(t,e){d.inPlace(e,["onreadystatechange"],"fn-",c)}function o(){var t=this,e=u.context(t);t.readyState>3&&!e.resolved&&(e.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,g,"fn-",c)}function i(t){y.push(t),h&&(b?b.then(a):v?v(a):(E=-E,R.data=E))}function a(){for(var t=0;t<y.length;t++)r([],y[t]);y.length&&(y=[])}function c(t,e){return e}function s(t,e){for(var n in t)e[n]=t[n];return e}t(6);var f=t("ee"),u=f.get("xhr"),d=t("wrap-function")(u),p=NREUM.o,l=p.XHR,h=p.MO,m=p.PR,v=p.SI,w="readystatechange",g=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],y=[];e.exports=u;var x=window.XMLHttpRequest=function(t){var e=new l(t);try{u.emit("new-xhr",[e],e),e.addEventListener(w,o,!1)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}return e};if(s(l,x),x.prototype=l.prototype,d.inPlace(x.prototype,["open","send"],"-xhr-",c),u.on("send-xhr-start",function(t,e){r(t,e),i(e)}),u.on("open-xhr-start",r),h){var b=m&&m.resolve();if(!v&&!m){var E=1,R=document.createTextNode(E);new h(a).observe(R,{characterData:!0})}}else f.on("fn-end",function(t){t[0]&&t[0].type===w||a()})},{}],15:[function(t,e,n){function r(t){if(!c(t))return null;var e=window.NREUM;if(!e.loader_config)return null;var n=(e.loader_config.accountID||"").toString()||null,r=(e.loader_config.agentID||"").toString()||null,f=(e.loader_config.trustKey||"").toString()||null;if(!n||!r)return null;var h=l.generateSpanId(),m=l.generateTraceId(),v=Date.now(),w={spanId:h,traceId:m,timestamp:v};return(t.sameOrigin||s(t)&&p())&&(w.traceContextParentHeader=o(h,m),w.traceContextStateHeader=i(h,v,n,r,f)),(t.sameOrigin&&!u()||!t.sameOrigin&&s(t)&&d())&&(w.newrelicHeader=a(h,m,v,n,r,f)),w}function o(t,e){return"00-"+e+"-"+t+"-01"}function i(t,e,n,r,o){var i=0,a="",c=1,s="",f="";return o+"@nr="+i+"-"+c+"-"+n+"-"+r+"-"+t+"-"+a+"-"+s+"-"+f+"-"+e}function a(t,e,n,r,o,i){var a="btoa"in window&&"function"==typeof window.btoa;if(!a)return null;var c={v:[0,1],d:{ty:"Browser",ac:r,ap:o,id:t,tr:e,ti:n}};return i&&r!==i&&(c.d.tk=i),btoa(JSON.stringify(c))}function c(t){return f()&&s(t)}function s(t){var e=!1,n={};if("init"in NREUM&&"distributed_tracing"in NREUM.init&&(n=NREUM.init.distributed_tracing),t.sameOrigin)e=!0;else if(n.allowed_origins instanceof Array)for(var r=0;r<n.allowed_origins.length;r++){var o=h(n.allowed_origins[r]);if(t.hostname===o.hostname&&t.protocol===o.protocol&&t.port===o.port){e=!0;break}}return e}function f(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&!!NREUM.init.distributed_tracing.enabled}function u(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&!!NREUM.init.distributed_tracing.exclude_newrelic_header}function d(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&NREUM.init.distributed_tracing.cors_use_newrelic_header!==!1}function p(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&!!NREUM.init.distributed_tracing.cors_use_tracecontext_headers}var l=t(24),h=t(17);e.exports={generateTracePayload:r,shouldGenerateTrace:c}},{}],16:[function(t,e,n){function r(t){var e=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<p;r++)t.removeEventListener(d[r],this.listener,!1);e.aborted||(n.duration=a.now()-this.startTime,this.loadCaptureCalled||4!==t.readyState?null==e.status&&(e.status=0):i(this,t),n.cbTime=this.cbTime,u.emit("xhr-done",[t],t),c("xhr",[e,n,this.startTime]))}}function o(t,e){var n=s(e),r=t.params;r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.parsedOrigin=s(e),t.sameOrigin=t.parsedOrigin.sameOrigin}function i(t,e){t.params.status=e.status;var n=v(e,t.lastSize);if(n&&(t.metrics.rxSize=n),t.sameOrigin){var r=e.getResponseHeader("X-NewRelic-App-Data");r&&(t.params.cat=r.split(", ").pop())}t.loadCaptureCalled=!0}var a=t("loader");if(a.xhrWrappable){var c=t("handle"),s=t(17),f=t(15).generateTracePayload,u=t("ee"),d=["load","error","abort","timeout"],p=d.length,l=t("id"),h=t(21),m=t(20),v=t(18),w=window.XMLHttpRequest;a.features.xhr=!0,t(14),t(7),u.on("new-xhr",function(t){var e=this;e.totalCbs=0,e.called=0,e.cbTime=0,e.end=r,e.ended=!1,e.xhrGuids={},e.lastSize=null,e.loadCaptureCalled=!1,t.addEventListener("load",function(n){i(e,t)},!1),h&&(h>34||h<10)||window.opera||t.addEventListener("progress",function(t){e.lastSize=t.loaded},!1)}),u.on("open-xhr-start",function(t){this.params={method:t[0]},o(this,t[1]),this.metrics={}}),u.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid);var n=f(this.parsedOrigin);if(n){var r=!1;n.newrelicHeader&&(e.setRequestHeader("newrelic",n.newrelicHeader),r=!0),n.traceContextParentHeader&&(e.setRequestHeader("traceparent",n.traceContextParentHeader),n.traceContextStateHeader&&e.setRequestHeader("tracestate",n.traceContextStateHeader),r=!0),r&&(this.dt=n)}}),u.on("send-xhr-start",function(t,e){var n=this.metrics,r=t[0],o=this;if(n&&r){var i=m(r);i&&(n.txSize=i)}this.startTime=a.now(),this.listener=function(t){try{"abort"!==t.type||o.loadCaptureCalled||(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof e.onload))&&o.end(e)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}};for(var c=0;c<p;c++)e.addEventListener(d[c],this.listener,!1)}),u.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),u.on("xhr-load-added",function(t,e){var n=""+l(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),u.on("xhr-load-removed",function(t,e){var n=""+l(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),u.on("addEventListener-end",function(t,e){e instanceof w&&"load"===t[0]&&u.emit("xhr-load-added",[t[1],t[2]],e)}),u.on("removeEventListener-end",function(t,e){e instanceof w&&"load"===t[0]&&u.emit("xhr-load-removed",[t[1],t[2]],e)}),u.on("fn-start",function(t,e,n){e instanceof w&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=a.now()))}),u.on("fn-end",function(t,e){this.xhrCbStart&&u.emit("xhr-cb-time",[a.now()-this.xhrCbStart,this.onload,e],e)}),u.on("fetch-before-start",function(t){function e(t,e){var n=!1;return e.newrelicHeader&&(t.set("newrelic",e.newrelicHeader),n=!0),e.traceContextParentHeader&&(t.set("traceparent",e.traceContextParentHeader),e.traceContextStateHeader&&t.set("tracestate",e.traceContextStateHeader),n=!0),n}var n,r=t[1]||{};"string"==typeof t[0]?n=t[0]:t[0]&&t[0].url&&(n=t[0].url),n&&(this.parsedOrigin=s(n),this.sameOrigin=this.parsedOrigin.sameOrigin);var o=f(this.parsedOrigin);if(o&&(o.newrelicHeader||o.traceContextParentHeader))if("string"==typeof t[0]){var i={};for(var a in r)i[a]=r[a];i.headers=new Headers(r.headers||{}),e(i.headers,o)&&(this.dt=o),t.length>1?t[1]=i:t.push(i)}else t[0]&&t[0].headers&&e(t[0].headers,o)&&(this.dt=o)})}},{}],17:[function(t,e,n){var r={};e.exports=function(t){if(t in r)return r[t];var e=document.createElement("a"),n=window.location,o={};e.href=t,o.port=e.port;var i=e.href.split("://");!o.port&&i[1]&&(o.port=i[1].split("/")[0].split("@").pop().split(":")[1]),o.port&&"0"!==o.port||(o.port="https"===i[0]?"443":"80"),o.hostname=e.hostname||n.hostname,o.pathname=e.pathname,o.protocol=i[0],"/"!==o.pathname.charAt(0)&&(o.pathname="/"+o.pathname);var a=!e.protocol||":"===e.protocol||e.protocol===n.protocol,c=e.hostname===document.domain&&e.port===n.port;return o.sameOrigin=a&&(!e.hostname||c),"/"===o.pathname&&(r[t]=o),o}},{}],18:[function(t,e,n){function r(t,e){var n=t.responseType;return"json"===n&&null!==e?e:"arraybuffer"===n||"blob"===n||"json"===n?o(t.response):"text"===n||""===n||void 0===n?o(t.responseText):void 0}var o=t(20);e.exports=r},{}],19:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[f.now()].concat(c(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(27),c=t(28),s=t("ee").get("tracer"),f=t("loader"),u=NREUM;"undefined"==typeof window.newrelic&&(newrelic=u);var d=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",l=p+"ixn-";a(d,function(t,e){u[e]=o(p+e,!0,"api")}),u.addPageAction=o(p+"addPageAction",!0),u.setCurrentRouteName=o(p+"routeName",!0),e.exports=newrelic,u.interaction=function(){return(new r).get()};var h=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(l+"tracer",[f.now(),t,n],r),function(){if(s.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return e.apply(this,arguments)}catch(t){throw s.emit("fn-err",[arguments,this,t],n),t}finally{s.emit("fn-end",[f.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){h[e]=o(l+e)}),newrelic.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),i("err",[t,f.now(),!1,e])}},{}],20:[function(t,e,n){e.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(e){return}}}},{}],21:[function(t,e,n){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),e.exports=r},{}],22:[function(t,e,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(i=Math.max((new Date).getTime(),i))-a}function o(){return i}var i=(new Date).getTime(),a=i,c=t(29);e.exports=r,e.exports.offset=a,e.exports.getLastTimestamp=o},{}],23:[function(t,e,n){function r(t,e){var n=t.getEntries();n.forEach(function(t){"first-paint"===t.name?d("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&d("timing",["fcp",Math.floor(t.startTime)])})}function o(t,e){var n=t.getEntries();n.length>0&&d("lcp",[n[n.length-1]])}function i(t){t.getEntries().forEach(function(t){t.hadRecentInput||d("cls",[t])})}function a(t){if(t instanceof h&&!v){var e=Math.round(t.timeStamp),n={type:t.type};e<=p.now()?n.fid=p.now()-e:e>p.offset&&e<=Date.now()?(e-=p.offset,n.fid=p.now()-e):e=p.now(),v=!0,d("timing",["fi",e,n])}}function c(t){d("pageHide",[p.now(),t])}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var s,f,u,d=t("handle"),p=t("loader"),l=t(26),h=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){s=new PerformanceObserver(r);try{s.observe({entryTypes:["paint"]})}catch(m){}f=new PerformanceObserver(o);try{f.observe({entryTypes:["largest-contentful-paint"]})}catch(m){}u=new PerformanceObserver(i);try{u.observe({type:"layout-shift",buffered:!0})}catch(m){}}if("addEventListener"in document){var v=!1,w=["click","keydown","mousedown","pointerdown","touchstart"];w.forEach(function(t){document.addEventListener(t,a,!1)})}l(c)}},{}],24:[function(t,e,n){function r(){function t(){return e?15&e[n++]:16*Math.random()|0}var e=null,n=0,r=window.crypto||window.msCrypto;r&&r.getRandomValues&&(e=r.getRandomValues(new Uint8Array(31)));for(var o,i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx",a="",c=0;c<i.length;c++)o=i[c],"x"===o?a+=t().toString(16):"y"===o?(o=3&t()|8,a+=o.toString(16)):a+=o;return a}function o(){return a(16)}function i(){return a(32)}function a(t){function e(){return n?15&n[r++]:16*Math.random()|0}var n=null,r=0,o=window.crypto||window.msCrypto;o&&o.getRandomValues&&Uint8Array&&(n=o.getRandomValues(new Uint8Array(31)));for(var i=[],a=0;a<t;a++)i.push(e().toString(16));return i.join("")}e.exports={generateUuid:r,generateSpanId:o,generateTraceId:i}},{}],25:[function(t,e,n){function r(t,e){if(!o)return!1;if(t!==o)return!1;if(!e)return!0;if(!i)return!1;for(var n=i.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,s=c.match(a);s&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(o="Safari",i=s[1])}e.exports={agent:o,version:i,match:r}},{}],26:[function(t,e,n){function r(t){function e(){t(a&&document[a]?document[a]:document[o]?"hidden":"visible")}"addEventListener"in document&&i&&document.addEventListener(i,e,!1)}e.exports=r;var o,i,a;"undefined"!=typeof document.hidden?(o="hidden",i="visibilitychange",a="visibilityState"):"undefined"!=typeof document.msHidden?(o="msHidden",i="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(o="webkitHidden",i="webkitvisibilitychange",a="webkitVisibilityState")},{}],27:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],28:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],29:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?s(t,c,i):i()}function n(n,r,o,i){if(!p.aborted||i){t&&t(n,r,o);for(var a=e(o),c=m(n),s=c.length,f=0;f<s;f++)c[f].apply(a,r);var d=u[y[n]];return d&&d.push([x,n,r,a]),a}}function l(t,e){g[t]=m(t).concat(e)}function h(t,e){var n=g[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function m(t){return g[t]||[]}function v(t){return d[t]=d[t]||o(n)}function w(t,e){f(t,function(t,n){e=e||"feature",y[n]=e,e in u||(u[e]=[])})}var g={},y={},x={on:l,addEventListener:l,removeEventListener:h,emit:n,get:v,listeners:m,context:e,buffer:w,abort:a,aborted:!1};return x}function i(){return new r}function a(){(u.api||u.feature)&&(p.aborted=!0,u=p.backlog={})}var c="nr@context",s=t("gos"),f=t(27),u={},d={},p=e.exports=o();p.backlog=u},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!b++){var t=x.info=NREUM.info,e=p.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return f.abort();s(g,function(e,n){t[e]||(t[e]=n)});var n=a();c("mark",["onload",n+x.offset],null,"api"),c("timing",["load",n]);var r=p.createElement("script");r.src="https://"+t.agent,e.parentNode.insertBefore(r,e)}}function o(){"complete"===p.readyState&&i()}function i(){c("mark",["domContent",a()+x.offset],null,"api")}var a=t(22),c=t("handle"),s=t(27),f=t("ee"),u=t(25),d=window,p=d.document,l="addEventListener",h="attachEvent",m=d.XMLHttpRequest,v=m&&m.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:m,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var w=""+location,g={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-spa-1184.min.js"},y=m&&v&&v[l]&&!/CriOS/.test(navigator.userAgent),x=e.exports={offset:a.getLastTimestamp(),now:a,origin:w,features:{},xhrWrappable:y,userAgent:u};t(19),t(23),p[l]?(p[l]("DOMContentLoaded",i,!1),d[l]("load",r,!1)):(p[h]("onreadystatechange",o),d[h]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var b=0},{}],"wrap-function":[function(t,e,n){function r(t){return!(t&&t instanceof Function&&t.apply&&!t[a])}var o=t("ee"),i=t(28),a="nr@original",c=Object.prototype.hasOwnProperty,s=!1;e.exports=function(t,e){function n(t,e,n,o){function nrWrapper(){var r,a,c,s;try{a=this,r=i(arguments),c="function"==typeof n?n(r,a):n||{}}catch(f){p([f,"",[r,a,o],c])}u(e+"start",[r,a,o],c);try{return s=t.apply(a,r)}catch(d){throw u(e+"err",[r,a,d],c),d}finally{u(e+"end",[r,a,s],c)}}return r(t)?t:(e||(e=""),nrWrapper[a]=t,d(t,nrWrapper),nrWrapper)}function f(t,e,o,i){o||(o="");var a,c,s,f="-"===o.charAt(0);for(s=0;s<e.length;s++)c=e[s],a=t[c],r(a)||(t[c]=n(a,f?c+o:o,i,c))}function u(n,r,o){if(!s||e){var i=s;s=!0;try{t.emit(n,r,o,e)}catch(a){p([a,n,r,o])}s=i}}function d(t,e){if(Object.defineProperty&&Object.keys)try{var n=Object.keys(t);return n.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(r){p([r])}for(var o in t)c.call(t,o)&&(e[o]=t[o]);return e}function p(e){try{t.emit("internal-error",e)}catch(n){}}return t||(t=o),n.inPlace=f,n.flag=a,n}},{}]},{},["loader",2,16,5,3,4]);</script>
+                <meta name="apple-itunes-app" content="app-id=922208952, affiliate-data=ct=mobile_banner_smart&amp;pt=108036802, app-argument=courseheroapp://qa/expert/dashboard/?trk=mobile_banner_smart">
+                <link rel="manifest" href="https://www.coursehero.com/manifest.json">
+            <meta name="theme-color" content="#001A96">
+                <link rel="search" type="application/opensearchdescription+xml" title="Course Hero Search Results" href="https://www.coursehero.com/open-search-description.xml">
+            <title>Tutor Dashboard - Course Hero</title>
+        
+            <script>
+                // NREUM is only defined in production. For other environments,
+                // set a shim so that usages of NREUM don't error.
+                if (typeof NREUM === 'undefined') {
+                    NREUM = {};
+                    NREUM.setCustomAttribute = NREUM.setPageViewName = function(){};
+                }
+            </script>
+                <script>LUX=(function(){var a=("undefined"!==typeof(LUX)&&"undefined"!==typeof(LUX.gaMarks)?LUX.gaMarks:[]);var d=("undefined"!==typeof(LUX)&&"undefined"!==typeof(LUX.gaMeasures)?LUX.gaMeasures:[]);var j="LUX_start";var k=window.performance;var l=("undefined"!==typeof(LUX)&&LUX.ns?LUX.ns:(Date.now?Date.now():+(new Date())));if(k&&k.timing&&k.timing.navigationStart){l=k.timing.navigationStart}function f(){if(k&&k.now){return k.now()}var o=Date.now?Date.now():+(new Date());return o-l}function b(n){if(k){if(k.mark){return k.mark(n)}else{if(k.webkitMark){return k.webkitMark(n)}}}a.push({name:n,entryType:"mark",startTime:f(),duration:0});return}function m(p,t,n){if("undefined"===typeof(t)&&h(j)){t=j}if(k){if(k.measure){if(t){if(n){return k.measure(p,t,n)}else{return k.measure(p,t)}}else{return k.measure(p)}}else{if(k.webkitMeasure){return k.webkitMeasure(p,t,n)}}}var r=0,o=f();if(t){var s=h(t);if(s){r=s.startTime}else{if(k&&k.timing&&k.timing[t]){r=k.timing[t]-k.timing.navigationStart}else{return}}}if(n){var q=h(n);if(q){o=q.startTime}else{if(k&&k.timing&&k.timing[n]){o=k.timing[n]-k.timing.navigationStart}else{return}}}d.push({name:p,entryType:"measure",startTime:r,duration:(o-r)});return}function h(n){return c(n,g())}function c(p,o){for(i=o.length-1;i>=0;i--){var n=o[i];if(p===n.name){return n}}return undefined}function g(){if(k){if(k.getEntriesByType){return k.getEntriesByType("mark")}else{if(k.webkitGetEntriesByType){return k.webkitGetEntriesByType("mark")}}}return a}return{mark:b,measure:m,gaMarks:a,gaMeasures:d}})();LUX.ns=(Date.now?Date.now():+(new Date()));LUX.ac=[];LUX.cmd=function(a){LUX.ac.push(a)};LUX.init=function(){LUX.cmd(["init"])};LUX.send=function(){LUX.cmd(["send"])};LUX.addData=function(a,b){LUX.cmd(["addData",a,b])};LUX_ae=[];window.addEventListener("error",function(a){LUX_ae.push(a)});LUX_al=[];if("function"===typeof(PerformanceObserver)&&"function"===typeof(PerformanceLongTaskTiming)){var LongTaskObserver=new PerformanceObserver(function(c){var b=c.getEntries();for(var a=0;a<b.length;a++){var d=b[a];LUX_al.push(d)}});try{LongTaskObserver.observe({type:["longtask"]})}catch(e){}};</script>
+            <script>
+                            LUX.addData('userid', '100000775235367');
+                    </script>
+        
+                    <meta name="description" content="Access quality crowd-sourced study materials tagged to courses at universities all over the world and get homework help from our tutors when you need it.">
+                <meta property="og:description" content="Access quality crowd-sourced study materials tagged to courses at universities all over the world and get homework help from our tutors when you need it.">
+                            <link rel="canonical" href="https://www.coursehero.com/qa/expert/dashboard/">
+                        <meta name="viewport" content="width=device-width, initial-scale=1">
+                                <meta property="og:image" content="https://www.coursehero.com/assets/img/CH_Logo_FB.png">
+                <meta property="og:title" content="Tutor Dashboard - Course Hero">
+                                <meta name="twitter:widgets:csp" content="on">
+                <meta name="twitter:card" content="summary_large_image">
+                <meta name="twitter:title" content="Tutor Dashboard - Course Hero">
+                <meta name="twitter:site" content="@CourseHero">
+                <meta name="twitter:image" content="https://www.coursehero.com/assets/img/CH_Logo_Twitter.png">
+                            <!--<base href="/qa/expert/dashboard/">--><base href=".">
+            
+            <link rel="apple-touch-icon" href="https://www.coursehero.com/assets/img/apple-touch-icon.png">
+            <!-- CSS -->
+                <link rel="stylesheet" href="./Tutor Dashboard - Course Hero_files/Icons.css" type="text/css">
+        
+                                                                <link rel="stylesheet" href="./Tutor Dashboard - Course Hero_files/granite.min.css" type="text/css">
+                        
+                                                                    <link href="./Tutor Dashboard - Course Hero_files/51e6588-a11de27.css" rel="stylesheet" type="text/css">
+                                                                
+                            <link href="./Tutor Dashboard - Course Hero_files/c7eeeaa-cf8100d.css" rel="stylesheet" type="text/css">
+        
+                                    <link rel="stylesheet" href="./Tutor Dashboard - Course Hero_files/bfca200-d7364bb.css">
+            
+            <link rel="stylesheet" href="./Tutor Dashboard - Course Hero_files/app.b988f34ab8be3b90c3e6.css">
+                <style>
+                .sw_search_widget_container .sw_search_bar_wrapper .mobile_sw_start_search_button{
+                    display: none;
+                }
+            </style>
+                <link rel="stylesheet" href="./Tutor Dashboard - Course Hero_files/dd9725c-fc7f09f.css">
+                                                    <link rel="stylesheet" href="./Tutor Dashboard - Course Hero_files/21ca058-69c74d9.css">
+                                
+            <!-- Head Javascript -->
+                                    <script src="./Tutor Dashboard - Course Hero_files/bundle-e43017e-714e819.js.download" type="text/javascript"></script>
+                        <script type="text/javascript">
+                                var percentageDefault = 0.5;
+                    CHAnalytics.init({
+                        env: 'prod',
+                        random_bytes: [134,54,35,216,0,141,17,81,141,67,120,82,109,168,166,215],
+                        enable_amplitude: false,
+                        interaction_impression_percentage: percentageDefault,
+                        interaction_impression_above_window: false            });
+                </script>
+                
+            <link rel="shortcut icon" href="https://www.coursehero.com/chfavicon.ico" type="image/x-icon">
+        
+            <script src="./Tutor Dashboard - Course Hero_files/f(1).txt"></script>
+            <a tabindex="-1" aria-hidden="true" href="https://www.coursehero.com/qa/expert/dashboard/?_pxhc=1602573328797" rel="nofollow" target="_blank" style="width: 0px; height: 0px; font-size: 0px; line-height: 0;"></a><style type="text/css" id="qual_style-q1m"></style><style type="text/css" id="qual_style-qwx"></style></head>
+    <body>
+        <header id="ch-header" class="SiteHeader translate searchExpand">
+                                    
+            <div class="ch_hamburger_icon  ">
+                <div class="bar"></div>
+                <div id="ch_offCanvas_nav" class="ndbNavigationDesktop">
+                    <div class="ch_dashboardNavbar" data-can-access-qa-dashboard="1" data-is-educator="" data-courses-to-hide-taxonomy-link="[10122614]"><div class="ndbNavMenu"><ul class="list-unstyled"><li class="main clickable -home-" data-cha-target-name="home_btn" data-cha-location="header_left" data-cha-action-type="visit" data-cha-action-target-type="page" data-cha-action-target-id="/home/#/home/"><i class="navIcon chi-home"></i>Student Dashboard</li></ul><ul class="list-unstyled"><li class="main clickable" data-cha-target-name="library_btn" data-cha-location="header_left" data-cha-action-type="visit" data-cha-action-target-type="page" data-cha-action-target-id="/home/#/library/my-unlocks/"><i class="navIcon chi-books"></i>My Library</li><li class="main clickable isLink" data-cha-target-name="upload_btn" data-cha-location="header_left" data-cha-action-type="visit" data-cha-action-target-type="page" data-cha-action-target-id="/upload/"><i class="navIcon chi-upload"></i>Upload</li></ul></div></div>
+        
+                </div>
+            </div>
+        <a href="coursehero.html" id="ch_headerLogo_action" class=" " data-cha-target-name="ch_logo_link" data-cha-action-type="visit" data-cha-action-target-type="page" data-cha-action-target-id="/">
+            <img alt="Course Hero Logo" class="ch_header_logo " id="ch_header_logo_origin" src="./Tutor Dashboard - Course Hero_files/coursehero-logo.svg" width="210" height="40">
+            <img alt="Course Hero Symbol" class="ch_headerMobile_logo " id="ch_header_logo_small" src="./Tutor Dashboard - Course Hero_files/coursehero-logotype_white.svg" width="42" height="30">
+        </a>
+                    <div class="ch_search_wrapper ">
+                                                                <div data-search-widget="" data-type="old_header_sw" data-user-id="100000775235367" data-is-educator="" data-tq-search-footer-bucket="0"><div class="sw_search_widget_container old_header_sw "><div class="sw_search_bar_wrapper"><a href="javascript:void(0)" class="mobile_sw_start_search_button"><i class="chi-search" aria-hidden="true"></i></a><div class="sw_search_bar "><input type="search" class="" placeholder="Find study resources" aria-label="Find study resources" value=""><i class="chi-search-alt sw_icon sw_search_icon"></i></div></div></div></div>
+        
+        
+                            </div>
+                <ul class="ch_nav_group isBrowseMenu">
+            
+        <li>
+            <button class="ch_nav_action isHamburgerMenu  hideInDesktop" aria-label="Menu"><span class="bar"></span></button>
+            <div class="ch_subNav_panel">
+                <ul class="ch_mobileNav_group">
+                    <li class="hasChildren">
+                                                                    <a href="https://www.coursehero.com/qa/expert/dashboard/" data-action-type="Secondary">My Dashboard</a>
+                                <ul class="ndbNavigationMobile isHidden">
+                                    <li class="oneLevelUpAction"><a href="https://www.coursehero.com/qa/expert/dashboard/#"><i class="fa fa-angle-left"></i> Main Menu</a></li>
+                                                                <div class="ch_dashboardNavbar" data-can-access-qa-dashboard="1" data-is-educator="" data-courses-to-hide-taxonomy-link="[10122614]"><div class="ndbNavMenu"><ul class="list-unstyled"><li class="main clickable -home-" data-cha-target-name="home_btn" data-cha-location="header_left" data-cha-action-type="visit" data-cha-action-target-type="page" data-cha-action-target-id="/home/#/home/"><i class="navIcon chi-home"></i>Student Dashboard</li></ul><ul class="list-unstyled"><li class="main clickable" data-cha-target-name="library_btn" data-cha-location="header_left" data-cha-action-type="visit" data-cha-action-target-type="page" data-cha-action-target-id="/home/#/library/my-unlocks/"><i class="navIcon chi-books"></i>My Library</li><li class="main clickable isLink" data-cha-target-name="upload_btn" data-cha-location="header_left" data-cha-action-type="visit" data-cha-action-target-type="page" data-cha-action-target-id="/upload/"><i class="navIcon chi-upload"></i>Upload</li></ul></div></div>
+                                </ul>
+                                                                                <a href="https://www.coursehero.com/study-materials/" data-action-type="Secondary" class="" title="Study Resources">Study Resources</a>
+                                                    <ul class="isHidden">
+                                    <li class="oneLevelUpAction"><a href="javascript:void(0);"><i class="fa fa-angle-left"></i> Main Menu</a></li>
+                                                                    <li>
+                                                                                    <a href="https://www.coursehero.com/study-materials/" rel="" title="by School" data-action-type="Secondary">by School</a>
+                                                                                                                                                    </li>
+                                                                    <li>
+                                                                                    <a href="https://www.coursehero.com/textbook-solutions/" rel="" title="by Textbook" data-action-type="Secondary">by Textbook</a>
+                                                                                                                                                    </li>
+                                                                    <li>
+                                                                                    <a href="https://www.coursehero.com/lit/" rel="" title="by Literature Title" data-action-type="Secondary">by Literature Title</a>
+                                                                                                                                                            <div class="ch_mobile_secondaryNav_group">
+                                                                                                    <a href="https://www.coursehero.com/lit/" data-action-type="Link" rel="" title="Study Guides">Study Guides</a>
+                                                                                                    <a href="https://www.coursehero.com/infographics/" data-action-type="Link" rel="" title="Infographics">Infographics</a>
+                                                                                            </div>
+                                                                            </li>
+                                                                    <li>
+                                                                                    <a href="https://www.coursehero.com/sg/" rel="" title="by Subject" data-action-type="Secondary">by Subject</a>
+                                                                                                                                                    </li>
+                                                            </ul>
+                                                                <a href="https://www.coursehero.com/tutors/homework-help/" data-action-type="Secondary" class="ch_mobile_tutoring_link" title="Expert Tutors">Expert Tutors</a>
+                                                                <a href="https://www.coursehero.com/free-access/" data-action-type="Secondary" class="" title="Contributing">Contributing</a>
+                                                    <ul class="isHidden">
+                                    <li class="oneLevelUpAction"><a href="javascript:void(0);"><i class="fa fa-angle-left"></i> Main Menu</a></li>
+                                                                    <li>
+                                                                                    <label class="notClickable">Earn Free Access</label>
+                                                                                                                                                    </li>
+                                                                    <li>
+                                                                                    <a href="https://www.coursehero.com/upload/" rel="nofollow" title="Upload Documents" data-action-type="Secondary">Upload Documents</a>
+                                                                                                                                                    </li>
+                                                                    <li>
+                                                                                    <a href="https://www.coursehero.com/referrals/" rel="nofollow" title="Refer Your Friends" data-action-type="Secondary">Refer Your Friends</a>
+                                                                                                                                                    </li>
+                                                                    <li>
+                                                                                    <label class="notClickable">Scholarships</label>
+                                                                                                                                                    </li>
+                                                            </ul>
+                                                        </li>
+                                <li class="ch_mobileAppLinks">
+                                                        <a href="https://itunes.apple.com/app/apple-store/id922208952?pt=108036802&amp;ct=nav_menu&amp;mt=8" class="ch-external-link" target="_blank" rel="nofollow noreferrer" data-action-type="Secondary">
+                            <img alt="app store button" class="ch_mobilePromotion_button " src="./Tutor Dashboard - Course Hero_files/appstore.png" height="30">
+                        </a>
+                                                        <a href="https://play.google.com/store/apps/details?id=com.coursehero.coursehero&amp;hl=en&amp;utm_campaign=nav_menu" class="ch-external-link" target="_blank" rel="nofollow noreferrer" data-action-type="Secondary">
+                            <img alt="google play button" class="ch_mobilePromotion_button " src="./Tutor Dashboard - Course Hero_files/googleplay.png" height="30">
+                        </a>
+                                    </li>
+                </ul>
+            </div>
+        </li>
+        
+                    <li>
+                                                            <a class="ch_nav_action" href="https://www.coursehero.com/study-materials/" title="Study Resources" id="" rel="" data-cha-target-name="find_study_resources_link" data-cha-location="header" data-cha-action-type="visit" data-action-type="Secondary" data-cha-action-target-type="page" data-cha-action-target-id="/study-materials/">
+                                            <span class="ch_nav_action_label ">
+                                                            <span class="prefixVerb ">Find</span>
+                                                                    Study Resources
+                                                                            <i class="fa fa-chevron-down"></i>
+                                                                                                                </span>
+                                    </a>
+                    <div class="ch_subNav_panel">
+                        <ul class="ch_subNav_group ">
+                                                    <li class="">
+                                                                    <a href="https://www.coursehero.com/study-materials/" rel="" title="by School" id="" data-cha-target-name="find_doc_by_school_link" data-cha-location="header" data-cha-action-type="visit" data-action-type="Link" data-cha-action-target-type="page" data-cha-action-target-id="/study-materials/">
+                                            by School
+                                        </a>
+                                    
+                                                                                        </li>
+                                                    <li class="ch_highlight_badge_new">
+                                                                    <a href="https://www.coursehero.com/textbook-solutions/" rel="" title="by Textbook" id="" data-cha-target-name="find_textbook_link" data-cha-location="header" data-cha-action-type="visit" data-action-type="Link" data-cha-action-target-type="page" data-cha-action-target-id="/textbook-solutions/">
+                                            by Textbook
+                                        </a>
+                                    
+                                                                                        </li>
+                                                    <li class="">
+                                                                    <a href="https://www.coursehero.com/lit/" rel="" title="by Literature Title" id="" data-cha-target-name="find_doc_by_book_link" data-cha-location="header" data-cha-action-type="visit" data-action-type="Link" data-cha-action-target-type="page" data-cha-action-target-id="/lit/">
+                                            by Literature Title
+                                        </a>
+                                    
+                                                                                                <i class="right_arrow fa fa-chevron-right"></i>
+                                        <ul class="ch_secondaryNav_group">
+                                                                                    <li>
+                                                    <a href="https://www.coursehero.com/lit/" rel="" title="Study Guides" id="" data-cha-target-name="find_lit_study_guides_link" data-cha-location="header" data-cha-action-type="visit" data-cha-action-target-type="page" data-action-type="Link" data-cha-action-target-id="/lit/">
+                                                        Study Guides
+                                                    </a>
+                                                </li>
+                                                                                    <li>
+                                                    <a href="https://www.coursehero.com/infographics/" rel="" title="Infographics" id="" data-cha-target-name="find_infographics_link" data-cha-location="header" data-cha-action-type="visit" data-cha-action-target-type="page" data-action-type="Link" data-cha-action-target-id="/infographics/">
+                                                        Infographics
+                                                    </a>
+                                                </li>
+                                                                            </ul>
+                                                            </li>
+                                                    <li class="">
+                                                                    <a href="https://www.coursehero.com/sg/" rel="" title="by Subject" id="" data-cha-target-name="find_doc_by_subject_link" data-cha-location="header" data-cha-action-type="visit" data-action-type="Link" data-cha-action-target-type="page" data-cha-action-target-id="/sg/">
+                                            by Subject
+                                        </a>
+                                    
+                                                                                        </li>
+                                            </ul>
+                    </div>
+                </li>
+                    <li>
+                                                            <a class="ch_nav_action" href="https://www.coursehero.com/tutors/homework-help/" title="Expert Tutors" id="" rel="" data-cha-target-name="get_tutoring_help_link" data-cha-location="header" data-cha-action-type="visit" data-action-type="Secondary" data-cha-action-target-type="page" data-cha-action-target-id="/tutors/homework-help/">
+                                            <span class="ch_nav_action_label ask-expert-tutors">
+                                                            <span class="prefixVerb ">Ask</span>
+                                                                    Expert Tutors
+                                        <div class="bonus-questions" style="display: none;"><i class="chi-gift-filled"></i><span class="bonus-questions-timer"></span></div>
+                                        <div class="tutor-questions"><i class="chi-ask-a-question-filled"></i><span id="tutor-questions-count">0</span></div>
+                                        <div class="bonus_question_tooltip">
+                                            <div class="bonus-question-tooltip-content">
+                                                You can ask <span id="bonus-questions-count"></span>!
+                                            </div>
+                                        </div>
+                                                                                </span>
+                                    </a>
+                    <div class="ch_subNav_panel">
+                        <ul class="ch_subNav_group ">
+                                            </ul>
+                    </div>
+                </li>
+                    <li>
+                                                            <a class="ch_nav_action" href="https://www.coursehero.com/free-access/" title="Contributing" id="" rel="" data-cha-target-name="earn_by_contributing_link" data-cha-location="header" data-cha-action-type="visit" data-action-type="Secondary" data-cha-action-target-type="page" data-cha-action-target-id="/free-access/">
+                                            <span class="ch_nav_action_label ">
+                                                            <span class="prefixVerb ">Earn by</span>
+                                                                    Contributing
+                                                                            <i class="fa fa-chevron-down"></i>
+                                                                                                                </span>
+                                    </a>
+                    <div class="ch_subNav_panel">
+                        <ul class="ch_subNav_group ">
+                                                    <li class="isSeparator">
+                                                                    Earn Free Access
+                                                                            <a href="https://www.coursehero.com/free-access/" rel="" title="Earn Free Access" id="" data-cha-target-name="earn_free_access_link" data-cha-location="header" data-cha-action-type="visit" data-cha-action-target-type="page" data-action-type="Link" data-cha-action-target-id="/free-access/">
+                                                Learn More &gt;
+                                            </a>
+                                                                    
+                                                                                        </li>
+                                                    <li class="">
+                                                                    <a href="https://www.coursehero.com/upload/" rel="nofollow" title="Upload Documents" id="" data-cha-target-name="upload_docs_link" data-cha-location="header" data-cha-action-type="visit" data-action-type="Link" data-cha-action-target-type="page" data-cha-action-target-id="/upload/">
+                                            Upload Documents
+                                        </a>
+                                    
+                                                                                        </li>
+                                                    <li class="">
+                                                                    <a href="https://www.coursehero.com/referrals/" rel="nofollow" title="Refer Your Friends" id="" data-cha-target-name="refer_friends_link" data-cha-location="header" data-cha-action-type="visit" data-action-type="Link" data-cha-action-target-type="page" data-cha-action-target-id="/referrals/">
+                                            Refer Your Friends
+                                        </a>
+                                    
+                                                                                        </li>
+                                                    <li class="isSeparator">
+                                                                    Scholarships
+                                                                            <a href="https://www.coursehero.com/scholarships/" rel="" title="Scholarships" id="" data-cha-target-name="scholarships_link" data-cha-location="header" data-cha-action-type="visit" data-cha-action-target-type="page" data-action-type="Link" data-cha-action-target-id="/scholarships/">
+                                                Learn More &gt;
+                                            </a>
+                                                                    
+                                                                                        </li>
+                                            </ul>
+                    </div>
+                </li>
+            </ul>     
+        
+        <ul class="ch_nav_group isUserMenu">
+                        <li id="ch_notifications_action" data-is-polling-active=""><button type="button" aria-label="Open notifications" class="notifications-header-button-1fSWf" data-cha-target-name="check_notifications_btn" data-cha-action-type="view" data-cha-action-target-type="notifications"><i class="fa fa-bell-o" aria-hidden="true"></i></button></li>
+                <li id="ch_userNav_action">
+                <a class="ch_nav_action">
+                    <div class="ch_profile_container" style="background-image:url(&#39;images/user.png&#39;);"></div></a>   
+                <div class="ch_userNav_panel open-to-left">
+                    <ul class="ch_userNav_group  ch_global_drop_down ">
+                                                            <li><a href="dashboard_new.html" rel="" class="ch_drop_down_dashboard_option isDashboardActive" title="Tutor Dashboard" onclick="" id="" data-cha-target-name="view_tutor_dashboard_link" data-cha-location="header_right" data-cha-action-type="visit" data-cha-action-target-type="page" data-cha-action-target-id="/qa/expert/dashboard/">Tutor Dashboard
+                                </a></li>
+                                            <li><a href="dashboard_new.html" rel="" class="ch_drop_down_dashboard_option" title="Go to Student Dashboard" onclick="" id="" data-cha-target-name="view_student_dashboard_link" data-cha-location="header_right" data-cha-action-type="visit" data-cha-action-target-type="page" data-cha-action-target-id="/home/">Go to Student Dashboard
+                                </a></li>
+                                            <li><a href="dashboard_new.html" rel="" class="" title="My Profile" onclick="" id="" data-cha-target-name="view_my_profile_link" data-cha-location="header_right" data-cha-action-type="visit" data-cha-action-target-type="page" data-cha-action-target-id="/profile/Stuent_kunalsingh/">My Profile
+                                </a></li>
+                                            <li><a href="dashboard_new.html" rel="" class="" title="Account Settings" onclick="" id="" data-cha-target-name="view_account_settings_link" data-cha-location="header_right" data-cha-action-type="visit" data-cha-action-target-type="page" data-cha-action-target-id="/home/#/settings">Account Settings
+                                </a></li>
+                                            <li><a href="dashboard_new.html" rel="" class="" title="My Rewards" onclick="" id="" data-cha-target-name="view_rewards_link" data-cha-location="header_right" data-cha-action-type="visit" data-cha-action-target-type="page" data-cha-action-target-id="/my-account/#/rewards">My Rewards
+                                </a></li>
+                                            <li><a href="dashboard_new.html" rel="" class="" title="My Scholarships" onclick="" id="" data-cha-target-name="view_scholarships_link" data-cha-location="header_right" data-cha-action-type="visit" data-cha-action-target-type="page" data-cha-action-target-id="/my-account/#/scholarships/active">My Scholarships
+                                </a></li>
+                                            <li><a href="dashboard_new.html" rel="" class="" title="Support" onclick="" id="" data-cha-target-name="get_support_link" data-cha-location="header_right" data-cha-action-type="visit" data-cha-action-target-type="page" data-cha-action-target-id="https://support.coursehero.com/">Support
+                                </a></li>
+                                            <li><a href="login.html" rel="" class="" title="Logout" onclick="" id="" data-cha-target-name="logout_link" data-cha-location="header_right" data-cha-action-type="visit" data-cha-action-target-type="page" data-cha-action-target-id="/logout/" data-testid="logoutLink">Logout
+                                </a></li>
+                                            <li><a href="dashboard_new.html" rel="" class="ch_userUpgrade_button translate" title="Upgrade to Premier" onclick="" id="" data-cha-target-name="upgrade_account_link" data-cha-location="header_right" data-cha-action-type="visit" data-cha-action-target-type="page" data-cha-action-target-id="/registration/">Upgrade to Premier
+                                </a></li>
+                                    </ul>
+                </div>
+            </li>
+        </ul>
+        
+            <script type="text/javascript">
+                window.isTeacher = 0;
+            </script>
+                <script src="./Tutor Dashboard - Course Hero_files/bundle-2a0860a-16e37b4.js.download" type="text/javascript"></script>
+         </header>
+       
+       <div class="container mt-5">
+            <div class="row w-100">
+                <div class="col-1 mx-2">
+                    <img style="border-radius: 50%;" width="100" height="100" src="https://images.unsplash.com/photo-1591467556072-81551049a4d2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80"/>
+                </div>
+                <div class="col-9">
+                    <div style="box-shadow: 0px 0px 10px 2px grey; font-size: 13px;" >
+                        <div class="px-2 py-1">
+                            <b>Question:</b>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt nulla dolore quos beatae inventore unde modi accusamus asperiores veniam, impedit sapiente iure ducimus quia explicabo possimus? Commodi, quis? Magnam, rerum.</p>
+                            <br/>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt nulla dolore quos beatae inventore unde modi accusamus asperiores veniam, impedit sapiente iure ducimus quia explicabo possimus? Commodi, quis? Magnam, rerum.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt nulla dolore quos beatae inventore unde modi accusamus asperiores veniam, impedit sapiente iure ducimus quia explicabo possimus? Commodi, quis? Magnam, rerum.Lorem ipsum </p>
+                            <button style="background: transparent;border:none;cursor:pointer;color:#c4007e;" href="" id="myBtn">Skip Question</button>&nbsp;&nbsp;&#9900;&nbsp;&nbsp;<a href="#" >2 Comments</a>&nbsp;&nbsp;&#9900;&nbsp;&nbsp;<a href="#" >&#9873;&nbsp;Flag Question</a>&nbsp;&nbsp;&#9900;&nbsp;&nbsp;<a href="#" >&#9873;&nbsp;Flag for copyright</a>
+                        </div>
+                        <div style="background-color: rgb(235, 235, 235);" class="px-2 py-1">
+                            <b>Subject </b>: Accounting
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row w-100 mt-2 px-5 py-2"  style="box-shadow: 0px 0px 10px 2px rgb(206, 205, 205); font-size: 13px;" >
+                <b>Answer</b> :
+                <br/>
+                <table width="100%" style="border:1px solid black;border-collapse: collapse;" >
+                    <tr style="border:1px solid black;border-collapse: collapse;">
+                        <td style="border:1px solid black;border-collapse: collapse;"><img src="images/editor_image.PNG" /></td>
+                    </tr>
+                    <tr style="border:1px solid black;border-collapse: collapse;">
+                        <td style="border:1px solid black;border-collapse: collapse;">
+                            <textarea class="theTextArea px-1" style="width: 100%;border: none;resize: none;height:100px;" placeholder="Write a quick summary of your answer."></textarea>
+                        </td>
+                    </tr>
+                </table>
+
+               <p class="mt-5"><b>Explanation</b></p> :
+                <br/><br/>
+                <table width="100%" style="border:1px solid black;border-collapse: collapse;" >
+                    <tr style="border:1px solid black;border-collapse: collapse;">
+                        <td style="border:1px solid black;border-collapse: collapse;"><img src="images/editor_image.PNG" /></td>
+                    </tr>
+                    <tr style="border:1px solid black;border-collapse: collapse;">
+                        <td style="border:1px solid black;border-collapse: collapse;">
+                            <textarea class="theTextArea px-1" style="width: 100%;border: none;resize: none;height:100px;" placeholder="Show your work and explain, in detail, how you arrived at your answer."></textarea>
+                        </td>
+                    </tr>
+                    <tr><td><p class="ml-1"><span style="color: blue;cursor: pointer;">Attach file(s)</span> or drag and drop file(s) in the box.</p></td></tr>
+                </table>
+            </div>
+
+            <div class="text-center mt-3 mb-5">
+                <button id="submitBTN" onclick="clicka()" class="btn" style="color:white;background-color: #e00099;">Post Answer</button>
+            </div>
+       </div>
+       <script>
+            // alert(localStorage.getItem("lastIndexUpdated"));
+            document.getElementById("myText").value=localStorage.getItem("lastIndexUpdated");
+        </script>
+
+     <!-- Modal content -->       
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <form id="FormID" method="POST">
+                    <div class="row">
+                        <div class="col-11 align-self-center text-center">
+                            <p><b>Tell us why you're skipping this question</b></p>
+                            <small>Accurate assessment here will help us improve your experience</small>
+                        </div>
+                        <div class="col-1 align-self-end">
+                            <span class="close">&times;</span>
+                        </div>
+                    </div>
+                    <br/>
+                    <div class="px-3">
+                        <div>
+                            <label><b>Too long or difficult?</b></label>   
+                        </div>
+                        <div class="input-group">
+                            <input  type="radio" name="diff" style="margin-top: 5px;">&nbsp;&nbsp;Question is too long
+                        </div>
+                        <div class="input-group">
+                            <input  type="radio" name="diff" style="margin-top: 5px;">&nbsp;&nbsp;Out of my knowledge
+                        </div>
+                    </div>
+                    <div class="px-3 mt-3">
+                        <div>
+                            <label><b>Missing information</b></label>   
+                        </div>
+                        <div class="input-group">
+                            <input  type="radio" name="miss" style="margin-top: 5px;">&nbsp;&nbsp;Incomplete Question
+                        </div>
+                        <div class="input-group">
+                            <input  type="radio" name="miss" style="margin-top: 5px;">&nbsp;&nbsp;Missing data,graph,link or other material
+                        </div>
+                    </div>
+                    <div class="px-3 mt-3">
+                        <div>
+                            <label><b>Other</b></label>   
+                        </div>
+                        <div class="input-group">
+                            <input  type="radio" name="other" style="margin-top: 5px;">&nbsp;&nbsp;Incorrect subject
+                        </div>
+                        <div class="input-group">
+                            <input  type="radio" name="other" style="margin-top: 5px;">&nbsp;&nbsp;Not a legitimate question
+                        </div>
+                        <div class="input-group">
+                            <input  type="radio" name="other" style="margin-top: 5px;">&nbsp;&nbsp;Other reason
+                        </div>
+                    </div>
+                    <div class="mt-3 text-center">
+                        <button class="cancel2" style="cursor:pointer;width:100px;padding: 5px 20px;border: 1px solid blue;background: transparent;">Cancel</button>
+                        <button type="submit" onclick="return call();" style="cursor:pointer;width:100px;padding: 5px 20px;border: 1px solid blue;background: transparent;">Submit</button>
+                    </div>
+                </form>
+            </div>       
+        </div>
+
+
+     <!--Submit Modal content -->       
+     <div id="mySubmitModal" class="modal">
+        <div class="modal-content-Submit">
+            <div class="px-3 mt-3 text-center">
+                <img src="images/tick.PNG"/>
+                <p>Thanks for the feedback.</p>
+            </div>
+            <div class="mt-5 mb-1 text-center">
+                <button onclick="changeCategory()" class="changeCategory" style="cursor:pointer;width:200px;padding: 5px 20px;border: 1px solid blue;background: transparent;">Change category</button>
+                <button onclick="nextQuestion()" class="nextQuestion btn-primary" style="cursor:pointer;width:200px;padding: 5px 20px;border: 1px solid blue;background: transparent;">Next Question</button>
+            </div>
+        </div>       
+    </div>
+        <script>
+            ClassicEditor
+                .create( document.querySelector( '#editor' ) )
+                .catch( error => {
+                    console.error( error );
+                } );
+        </script>
+        <script>
+            // Get the modal
+            var modal = document.getElementById("myModal");
+
+            // Get the button that opens the modal
+            var btn = document.getElementById("myBtn");
+
+            
+            // When the user clicks on the button, open the modal
+            btn.onclick = function() {
+            modal.style.display = "block";
+            }
+
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+
+            // Get the <span> element that closes the modal
+            var span2 = document.getElementsByClassName("close2")[0];
+           
+           
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
+            modal.style.display = "none";
+            }
+
+            // When the user clicks on <span> (x), close the modal
+            span2.onclick = function() {
+            modal.style.display = "none";
+            }
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+            
+            function clicka() {
+                //new Submit Modal
+                modal = document.getElementById("mySubmitModal");
+                modal.style.display = "block";
+                return false;
+            }
+            
+            
+        </script>
+
+    </body>
+</html>
